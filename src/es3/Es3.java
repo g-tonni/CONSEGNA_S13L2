@@ -13,7 +13,12 @@ public class Es3 {
             if (testo.equals(":q")) break;
             String testoSep = "";
             for (int i = 0; i < testo.length(); i++) {
-                testoSep = testoSep + testo.charAt(i) + ",";
+                if(i == testo.length()-1) {
+                    testoSep = testoSep + testo.charAt(i);
+                } else {
+                    testoSep = testoSep + testo.charAt(i) + ",";
+                }
+
             }
             System.out.println(testoSep);
         }
